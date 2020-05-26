@@ -1,0 +1,151 @@
+.footer {
+	width: 100%;
+	background: linear-gradient(90deg, #316099 50%, #5A98D0 50%);
+}
+
+.footer__wrapper {
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 0 96px 0 212px; 
+}
+
+.footer__inner-wrapper {
+	background: #316099;
+	padding: 0 196px 0 0;
+}
+
+.footer__top-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 95px 0 60px;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer__top-wrapper a {
+	&:hover {
+      opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__contacts {
+	width: 370px;
+	padding: 0 100px 0 0;
+}
+
+.footer__logo {
+	display: flex;
+
+	&:hover {
+      opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__logo-image {
+	display: block;
+	margin: auto 0;
+}
+
+.footer__logo-text {
+	margin: auto 0;
+	padding: 0 0 0 17px;
+	.font-bold;
+	font-size: 28px;
+	line-height: 46px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+.footer__contacts-list {
+	list-style: none;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+.footer__contacts-list li {
+	display: flex;
+	padding: 23px 0 0 0;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+
+.footer__contacts-title {
+	min-width: 18px;
+	.font-bold;
+	margin: 0 20px 0 0;
+}
+
+.footer__about,
+.footer__social {
+	width: 220px;
+}
+
+.footer__about-header,
+.footer__social-header {
+	margin: 0;
+	padding: 0 0 32px 0;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+
+.footer__about-list,
+.footer__social-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+
+.footer__about-list li,
+.footer__social-list li {
+	padding: 0 0 17px 0;
+}
+
+.footer__copyright {
+	display: inline-block;
+	padding: 0 0 65px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	opacity: 0.4;
+}
+
+@media (max-width: @desktop-width) {
+  .footer__wrapper {
+		padding: 0 85px;
+	}
+
+	.footer__inner-wrapper {
+		padding: 0;
+	}
+}
+
+@media (max-width: @tablet-width) {
+  .footer__wrapper {
+		padding: 0 30px;
+		background: #316099;
+	}
+
+	.footer__top-wrapper {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		padding: 95px 0 0;
+	}
+
+	.footer__top-wrapper div {
+		padding: 0 0 50px 0;
+	}
+
+	.footer__contacts {
+		width: 100%;
+	}
+}

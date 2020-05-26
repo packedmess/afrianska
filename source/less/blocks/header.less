@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 48px 85px 0;
+}
+
+.header__logo {
+  line-height: 0;
+  font-size: 0;
+
+  &:hover {
+      opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .header__wrapper {
+    padding: 48px 30px 0;
+  }
+}
